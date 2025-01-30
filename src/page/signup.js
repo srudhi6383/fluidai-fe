@@ -44,7 +44,7 @@ const Signup = () => {
         <Input
           type="text"
           name="name"
-          placeholder="Name"
+          placeholder="NAME"
           value={formData.name}
           onChange={handleChange}
           required
@@ -52,7 +52,7 @@ const Signup = () => {
         <Input
           type="text"
           name="email"
-          placeholder="Email"
+          placeholder="MAIL ID"
           value={formData.email}
           onChange={handleChange}
           required
@@ -76,24 +76,24 @@ export default Signup;
 
 const Container = styled.div`
   width: 100%;
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 30px;
+  max-width: 700px;
+  margin: 25px auto;
+  padding: 25px;
   background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 5px 22px rgba(19, 9, 9, 0.1);
 `;
 
 const Title = styled.h1`
-  margin-bottom: 30px;
-  font-size: 28px;
+  margin-bottom: 50px;
+  font-size: 40px;
   color:rgb(115, 43, 97);
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 `;
 
 const Input = styled.input`
@@ -107,27 +107,27 @@ const Input = styled.input`
   &:focus {
     outline: none;
     border-color:rgb(120, 48, 122);
-    background-color: #fff;
+    background-color: rgb(0,0,0);
   }
 `;
 
 const Button = styled.button`
-  padding: 14px;
+  padding: 15px;
   background-color:rgb(91, 24, 74);
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 18px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.5s ease, transform 0.4s ease;
 
   &:hover {
     background-color:rgb(122, 79, 117);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
 `;
 
 const ErrorMessage = styled.p`
   color:rgb(248, 0, 0);
-  font-size: 14px;
+  font-size: 20px;
 `;

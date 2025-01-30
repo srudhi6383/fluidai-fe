@@ -16,19 +16,21 @@ const Login = () => {
       password: password,
     };
     axios
-      .post("http://localhost:5000/user/login", formData)
-      .then((res) => {
+    .post("http:localhost:5000/user/login", formData)
+    .then((res) => {
         console.log(res.data);
         alert(res.data.msg);
-        localStorage.setItem("token", res.data.token);
-         navigate("/add");
+        localStorage.setItem("token",res.data.token);
+        navigate("/add");
         setEmail("");
         setPassword("");
-      })
-      .catch((err) => {
+    })
+    .catch((err)=> {
         alert(err.response.data.msg);
-      });
-  };
+
+    })
+}
+     
 
   return (
     <Container>
@@ -56,19 +58,19 @@ const Login = () => {
 export default Login;
 
 const Container = styled.div`
-  width: 100%;
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 30px;
-  background-color: #f9f9f9;
+  width: 50%;
+  max-width: 200px;
+  margin: 25px auto;
+  padding: 20px;
+  background-color:rgba(249, 249, 249, 0.34);
   border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(19, 0, 0, 0.1);
 `;
 
 const Title = styled.h1`
-  margin-bottom: 30px;
-  font-size: 28px;
-  color:rgb(142, 26, 115);
+  margin-bottom: 45px;
+  font-size: 30px;
+  color:rgb(78, 8, 62);
 `;
 
 const Form = styled.form`
@@ -79,15 +81,15 @@ const Form = styled.form`
 
 const Input = styled.input`
   padding: 12px;
-  font-size: 16px;
+  font-size: 25px;
   border: 1px solid #ccc;
   border-radius: 8px;
   margin-bottom: 10px;
-  background-color: #f2f2f2;
+  background-color:rgba(242, 242, 242, 0.47);
 
   &:focus {
     outline: none;
-    border-color: #4CAF50;
+    border-color:rgb(3, 47, 4);
     background-color: #fff;
   }
 `;
@@ -97,13 +99,13 @@ const Button = styled.button`
   background-color:rgb(175, 76, 170);
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 18px;
+  border-radius: 10px;
+  font-size: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 
   &:hover {
     background-color:rgb(78, 23, 74);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
 `;

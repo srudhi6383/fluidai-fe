@@ -82,7 +82,7 @@ const Home = () => {
     <Container>
         <Div>
            
-      <Button onClick={() => navigate("/add")}><b>+</b> Add Task</Button>
+      <Button onClick={() => navigate("/add")}><b>+</b> Add The Task</Button>
       </Div>
       <TaskList>
         {tasks.length > 0 &&
@@ -118,31 +118,31 @@ const Home = () => {
 };
 export default Home;
 const Container = styled.div`
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
 `;
 
 const Div = styled.div`
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: right;
 `;
 
 const Button = styled.button`
-  padding: 12px 25px;
+  padding: 10px 55px;
   background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 
   &:hover {
-    background-color: #45a049;
+    background-color:rgb(12, 75, 15);
     transform: translateY(-2px);
   }
 `;
@@ -150,27 +150,27 @@ const Button = styled.button`
 const TaskList = styled.div`
   display: grid;
   margin-top: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 35px;
 `;
 
 const TaskCard = styled.div`
-  padding: 20px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 10px;
   background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.0);
   }
 
   h3 {
-    color: #333;
+    color: #444;
   }
 
   p {
-    color: #777;
+    color: #888;
   }
 `;
 
@@ -178,9 +178,9 @@ const Select = styled.select`
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 80%;
-  margin-bottom: 15px;
-  font-size: 14px;
-  color: #333;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #444;
 `;
 
