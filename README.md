@@ -1,2 +1,3 @@
-- **Frontend Link** :[https://task-sable-gamma.vercel.app/](https://task-sable-gamma.vercel.app/)
-- **Backend Link** : [https://fluid-ai-rmdb.onrender.com/](https://fluid-ai-rmdb.onrender.com/)
+- **Frontend Deployed Link** :[https://task-sable-gamma.vercel.app/](https://task-sable-gamma.vercel.app/)
+- **Backend Repo Link** : [https://github.com/srudhi6383/fluid-ai](https://github.com/srudhi6383/fluid-ai) 
+- **Backend Deployed Link** : [https://fluid-ai-rmdb.onrender.com/](https://fluid-ai-rmdb.onrender.com/)
